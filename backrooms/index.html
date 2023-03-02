@@ -12,17 +12,14 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Backrooms v1.5 - WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-	<body>
-	  <!-- Add a container element for the game -->
-	  <div id="gameContainer"></div>
-	  <!-- Add the JavaScript code to automatically set fullscreen mode -->
-	  <script>
-		document.addEventListener("DOMContentLoaded", function(event) {
-		  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json");
-		  if (gameInstance.SetFullscreen) {
-			gameInstance.SetFullscreen(1);
-		  }
-		});
-	  </script>
-	</body>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Backrooms</div>
+      </div>
+    </div>
+  </body>
 </html>
