@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDFJPGPQZ0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,29 +13,102 @@
     
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play The Backrooms Game | Backrooms Unblocked</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Backrooms v1.5 - WebGL.json", {onProgress: UnityProgress});
-    </script>
+    <style>
+      /* General body styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* WebGL container styling */
+      .webgl-content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #gameContainer {
+        width: 100%;
+        max-width: 1200px;
+        height: 750px;
+        background-color: #000;
+        border: 5px solid #333;
+        border-radius: 10px;
+      }
+
+      .footer {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 10px;
+      }
+
+      /* Game description styling */
+      .game-description {
+        max-width: 1200px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .game-description h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .game-description p {
+        color: #555;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        #gameContainer {
+          width: 100%;
+          height: 450px;
+        }
+
+        .game-description {
+          padding: 15px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 1200px; height: 750px"></div>
+      <div id="gameContainer"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</div>
         <div class="title">The Backrooms</div>
       </div>
     </div>
 
     <div class="game-description">
       <h1>Play The Backrooms Game Unblocked</h1>
-      <p>The Backrooms is an online game inspired by a popular internet phenomenon. Players find themselves trapped in an eerie, seemingly endless maze of empty yellow rooms. This unsettling environment, known as a "liminal space," originated from a 2019 4chan post and has since captured the imagination of many. The game challenges players to navigate through this surreal, expansive setting while avoiding mysterious entities. With its unique concept of "no-clipping out of reality," The Backrooms offers an immersive and unsettling experience that blends elements of exploration, survival, and psychological horror.</p>
+      <p>The Backrooms is an online game inspired by a popular internet phenomenon. Players find themselves trapped in an eerie, seemingly endless maze of empty yellow rooms. This unsettling environment, known as a "liminal space," originated from a 2019 4chan post and has since captured the imagination of many.</p>
+      <p>The game challenges players to navigate through this surreal, expansive setting while avoiding mysterious entities. With its unique concept of "no-clipping out of reality," The Backrooms offers an immersive and unsettling experience that blends elements of exploration, survival, and psychological horror.</p>
     </div>
-    
   </body>
 </html>
