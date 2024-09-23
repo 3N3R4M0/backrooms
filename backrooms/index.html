@@ -34,6 +34,51 @@
         align-items: center;
       }
 
+      /* Container for WebGL Player */
+      .webgl-container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      /* Footer section for WebGL Player controls */
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+      }
+
+      /* WebGL logo and fullscreen button */
+      .webgl-logo {
+        background-image: url('TemplateData/webgl-logo.png');
+        background-size: contain;
+        width: 128px;
+        height: 128px;
+      }
+
+      .fullscreen {
+        background-image: url('TemplateData/fullscreen.png');
+        background-size: contain;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 10px;
+        text-align: center;
+        flex-grow: 1;
+      }
+
       /* Container for Game Description */
       .description-container {
         width: 100%;
@@ -58,11 +103,16 @@
         color: #555;
       }
 
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        #gameContainer {
+          width: 100%;
+          height: 450px;
+        }
 
-      .title {
-        font-size: 1.5rem;
-        color: #333;
-        margin-top: 10px;
+        .description-container {
+          padding: 15px;
+        }
       }
     </style>
   </head>
