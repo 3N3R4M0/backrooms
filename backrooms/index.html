@@ -34,6 +34,22 @@
         align-items: center;
       }
 
+      /* WebGL container styling */
+      .webgl-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      #gameContainer {
+        width: 1200px;
+        height: 750px;
+        border: 5px solid #333;
+        border-radius: 10px;
+        background-color: #000;
+      }
 
       .footer {
         margin-top: 10px;
@@ -84,15 +100,15 @@
   </head>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 1200px; height: 750px"></div>
+      <div id="gameContainer"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</div>
         <div class="title">The Backrooms</div>
       </div>
     </div>
 
-    <!-- Game description moved below the player -->
+    <!-- Game description below the player -->
     <div class="game-description">
       <h1>Play The Backrooms Game Unblocked</h1>
       <p>The Backrooms is an online game inspired by a popular internet phenomenon. Players find themselves trapped in an eerie, seemingly endless maze of empty yellow rooms. This unsettling environment, known as a "liminal space," originated from a 2019 4chan post and has since captured the imagination of many.</p>
