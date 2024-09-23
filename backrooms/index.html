@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Backrooms v1.5 - WebGL.json", {onProgress: UnityProgress});
+    </script>
     <style>
       /* General body styling */
       body {
@@ -31,13 +34,6 @@
         align-items: center;
       }
 
-      /* WebGL container styling */
-      .webgl-content {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
 
       .footer {
         margin-top: 10px;
@@ -91,7 +87,7 @@
       <div id="gameContainer" style="width: 1200px; height: 750px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">The Backrooms</div>
       </div>
     </div>
